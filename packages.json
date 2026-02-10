@@ -1,0 +1,21 @@
+[
+  "bind",
+  "dioxus-cli",
+  "fish",
+  "github-cli",
+  "ipset",
+  "iptables-nft",
+  "jq",
+  "jujutsu",
+  "less",
+  "man-db",
+  "nodejs-lts-jod",
+  "pnpm",
+  "python",
+  "python-playwright",
+  "rustup",
+  "typescript",
+  "typescript-language-server",
+  "uv",
+  "vim"
+]
