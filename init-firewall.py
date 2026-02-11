@@ -128,11 +128,15 @@ for domain in (
     "statsig.anthropic.com",
     "statsig.com",
     "crates.io",
+    "developers.google.com",
     "dioxuslabs.com",
     "docs.astral.sh",
     "docs.rs",
+    "googleapis.dev",
     "nodejs.org",
     "npm.jsr.io",
+    "pypi.org",
+    "wiki.archlinux.org",
     "zod.dev",
 ):
     print("Resolving {}...".format(domain))
