@@ -20,16 +20,16 @@ WORKDIR /workspace
 RUN useradd --create-home arch
 USER arch
 
+RUN rustup default stable
+RUN rustup target add wasm32-unknown-unknown
+RUN rustup component add rust-analyzer
+
 # Install global packages
 ENV PNPM_HOME=/home/arch/.local/share/pnpm
 ENV PATH=$PATH:$PNPM_HOME
 
 # Install Claude
 RUN pnpm add --global @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
-
-RUN rustup default stable
-RUN rustup target add wasm32-unknown-unknown
-RUN rustup component add rust-analyzer
 
 # Copy and set up firewall script
 COPY init-firewall.py /usr/local/bin/
